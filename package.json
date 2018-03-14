@@ -1,0 +1,35 @@
+{
+  "name": "@sevensigma/pnpjs-error-helper",
+  "version": "1.0.2",
+  "description": "A module providing utility methods for handling errors from the PnPJS library.",
+  "main": "dist/ErrorHelper.js",
+  "types": "dist/ErrorHelper.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/tslint --project ./tsconfig.json",
+    "prebuild": "npm run lint",
+    "build": "./node_modules/.bin/tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sevensigma-au/pnpjs-error-helper.git"
+  },
+  "author": "sevensigma-au",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sevensigma-au/pnpjs-error-helper/issues"
+  },
+  "homepage": "https://github.com/sevensigma-au/pnpjs-error-helper#readme",
+  "devDependencies": {
+    "tslint": "5.6.0",
+    "typescript": "2.4.2"
+  },
+  "peerDependencies": {
+    "@pnp/odata": "*"
+  },
+  "dependencies": {
+    "@pnp/common": "1.0.3",
+    "@pnp/logging": "1.0.3",
+    "@pnp/odata": "1.0.3"
+  }
+}
